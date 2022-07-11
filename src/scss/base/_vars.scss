@@ -1,0 +1,13 @@
+// Стандартный цвет шрифта
+$mainColor: #212d55;
+// Стандартный шрифт
+$fontFamily: "Gilroy";
+// Размер шрифта у body
+$fontSize: 1.6rem;
+
+// Размер шрифта для rem
+$htmlFontSize: 0.6944vw;
+@media (min-width: 48em) {
+  $htmlFontSize: 1.5625vw;
+}
+$minWidth: 320;

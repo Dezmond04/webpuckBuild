@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+}
+
+[class*="__container"] {
+  width: 117rem;
+  margin: 0px auto;
+  @media (max-width: 48em) {
+    padding: 0 3rem;
+    width: 100%;
+  }
+}
+._lock {
+  overflow: hidden;
+}
