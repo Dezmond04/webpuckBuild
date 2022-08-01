@@ -1,12 +1,27 @@
+// Подключаем шрифт гугл
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Inter:wght@400;700&display=swap");
+// Подключаем иконочный шрифт
+@import "fonts/icons";
+// Подключаем шрифты локально если есть
+@import "fonts/fonts";
 // Подключаем переменные
 @import "base/vars";
 // Подключаем базовый сброс стилей
 @import "base/null";
 // Подключаем библиотеки
 @import "libs/libs";
-// Подключаем базовые настройки для совпадающих классов (контейнеры и тд)
+// Подключаем базовые настройки (контейнеры и тд)
 @import "base/basic.scss";
+// Подключаем стили для общих классов (title, primary-btn и т.д)
+@import "common.scss";
+
 // Подключаем блоки
+@import "blocks/header";
+@import "blocks/main-banner";
+@import "blocks/portfolio";
+@import "blocks/cases";
+@import "blocks/catalog";
+
 
 // Подключение Попапов
 // @import "base/popup";

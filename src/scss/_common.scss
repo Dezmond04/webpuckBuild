@@ -1,0 +1,70 @@
+// Общие классы и т.д
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: $mainTextColor;
+}
+.info {
+  color: $secondTextColor;
+}
+.primary-btn {
+  padding: 1rem 4.5rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: $buttonBg;
+  color: $secondTextColor;
+}
+.second-btn {
+  padding: 2rem 3.5rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: $buttonBg;
+  color: $secondTextColor;
+}
+.more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  &:before {
+    order: 2;
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+  }
+  & .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $buttonBg;
+  }
+}
+@media (max-width: $tablet) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: $mobile) {
+  section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+  .info {
+    font-size: 1.5rem;
+  }
+}

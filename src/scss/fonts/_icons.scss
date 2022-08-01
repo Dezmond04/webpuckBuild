@@ -1,0 +1,47 @@
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-display: swap;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+._icon-check:before {
+  content: "\e903";
+}
+._icon-slider-arrow:before {
+  content: "\e905";
+}
+._icon-basket:before {
+  content: "\e900";
+}
+._icon-vk:before {
+  content: "\e901";
+}
+._icon-share:before {
+  content: "\e902";
+}
+._icon-large-arrow:before {
+  content: "\e904";
+}
+._icon-play:before {
+  content: "\e906";
+}
+._icon-mark:before {
+  content: "\e907";
+}
+._icon-telegram:before {
+  content: "\e908";
+}
+._icon-whatsapp:before {
+  content: "\e909";
+}

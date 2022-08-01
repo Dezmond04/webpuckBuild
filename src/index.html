@@ -5,17 +5,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Webpack</title>
+    <title>Главная</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container">1</div>
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <a href="#" class="header__logo-link">
+                <img
+                  src="assets/img/logo.svg"
+                  alt="logo"
+                  class="header__logo"
+                />
+              </a>
+              <div class="header__about">
+                <a href="#" class="header__mark _icon-mark">ТЦ Интерьер Сити</a>
+                <a href="#" class="header__mark _icon-mark">Три кита</a>
+                <span class="header__mark">пн-вс 10:00 - 21:00</span>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__contact">
+                <div class="header__social">
+                  <a href="#" class="header__social-link _icon-whatsapp"></a>
+                  <a href="#" class="header__social-link _icon-telegram"></a>
+                </div>
+                <div class="header__phone">
+                  <a href="tel:+7 (909) 999-99-99" class="header__phone-link"
+                    >+7 (90Х) ХХХ - ХХ - ХХ</a
+                  >
+                </div>
+              </div>
+              <button class="header__menu menu">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </header>
       <main class="main">
         <section class="main-banner">
           <div class="main-banner__container">
-            <h1>Hello</h1>
+            <h1 class="main-banner__title-mobile">
+              Красивые и функциональные кухни на заказ
+            </h2>
+          </div>
+          <div class="main-banner__image">
+            <img
+              src="assets/img/main-banner-image-1.jpg"
+              alt="Photo"
+              class="main-banner__img"
+            />
+            <img
+              src="assets/img/main-banner-image-1-mobile.jpg"
+              alt="Photo"
+              class="main-banner__img-mobile"
+            />
+          </div>
+          <div class="main-banner__container">
+            <div class="main-banner__content">
+              <h2 class="main-banner__title">
+                Красивые и функциональные кухни на заказ
+              </h2>
+              <div class="main-banner__info">
+                Эмоционально и функционально настроим пространство под вас
+              </div>
+              <div class="main-banner__project">
+                У вас уже есть дизайн-проект?
+              </div>
+              <div class="main-banner__button-wrapper">
+                <button class="main-banner__button primary-btn">Да</button>
+                <button class="main-banner__button primary-btn">Нет</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio">
+          <div class="portfolio__container">
+            <div class="portfolio__wrapper">
+            <h2 class="portfolio__title title">
+              Мы реализовали 1000+ проектов кухонь для небольших студий и огромных коттеджей
+            </h2>
+            <div class="portfolio__info info">
+              Кухня — один из интерфейсов дома. И мы находим наилучшее решение его реализации, выжимая максимум из пространства и бюджета, сохраняя высокое качество исполнения.
+            </div>
+          </div>
+          <div class="portfolio__card-wrapper">
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-1.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Cмотреть каталог готовых моделей
+              </div>
+            </a>
+            </div>
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-2.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Ознакомиться с портфолио
+              </div>
+            </a>
+            </div>
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-3.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Подобрать кухню в интерьер
+              </div>
+            </a>
+            </div>
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-4.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Рассчитать проект
+              </div>
+            </a>
+            </div>
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-5.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Вызвать замерщика
+              </div>
+            </a>
+            </div>
+            <div class="portfolio__card portfolio-card">
+              <a href="#">
+              <div class="portfolio-card__image">
+                <img src="assets/img/portfolio-card/portfolio-card-image-6.jpg" alt="Image Card" class="portfolio-card__img">
+              </div>
+              <div class="portfolio-card__info">
+                Посетить шоурум
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="cases">
+          <div class="cases__container">
+          <div class="cases__wrapper">
+            <div class="cases__slider cases-slider">
+              <div class="cases-slider__slider swiper">
+                <div class="cases-slider__wrapper swiper-wrapper">
+                  <div class="cases-slider__slide swiper-slide">
+                    <div class="cases-slider__image">
+                      <img src="assets/img/cases-slider/cases-slider-image-1.jpg" alt="Slider Image" class="cases-slider__img">
+                    </div>
+                    <div class="cases-slider__content">
+                      <h4 class="cases-slider__name">Название кейса</h4>
+                    <div class="cases-slider__text-wrapper">
+                      <div class="cases-slider__info">Краткое описание кейса, которое лучше раскрывает боль клиента.</div>
+                      <button class="cases-slider__button more _icon-large-arrow">
+                        <span>Подробнее</span>
+                        <span class="line"></span>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cases__content">
+              <h2 class="cases__title title">Учитываем 20+ параметров, чтобы создать идеальную кухню</h2>
+              <div class="cases__info">
+                Именно поэтому у нас получаются отличные кейсы решенных задач заказчиков в интерьере.
+              </div>
+              <div class="cases__project">
+                У вас есть задача, которую нужно решить?
+              </div>
+              <div class="cases__buttons">
+                <button class="cases__btn primary-btn">Да</button>
+                <button class="cases__btn primary-btn">Нет</button>
+                <button class="cases__button second-btn">
+                  СМОТРЕТЬ ВСЕ ПРОЕКТЫ
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container">
+            <div class="catalog__top-wrapper">
+              <div class="catalog__content">
+                <h2 class="catalog__title title">
+                  Каталог популярных моделей кухонь
+                </h2>
+                <div class="catalog__info">
+                  Все фотографии на сайте реальные
+                </div>
+              </div>
+              <div class="catalog__links">
+                <a href="#" class="catalog__link">ВСЕ МОДЕЛИ</a>
+                <a href="#" class="catalog__link _active">КЛАССИЧЕСКИЕ</a>
+                <a href="#" class="catalog__link">СОВРЕМЕННЫЕ</a>
+              </div>
+            </div>
+            <div class="catalog__wrapper">
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-1.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-2.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-3.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-4.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-5.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__image">
+                  <img src="assets/img/catalog-card/catalog-card-image-6.jpg" alt="Card Img" class="catalog-card__img">
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__name">Название модели</div>
+                  <div class="catalog-card__price">от 99 999₽</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

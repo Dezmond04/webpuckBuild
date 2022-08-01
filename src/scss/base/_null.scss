@@ -22,13 +22,22 @@ body {
   min-width: $minWidth + px;
 }
 html {
-  font-size: $htmlFontSize;
+  font-size: $htmlFontSizeDesktop;
+  @media (max-width: $tablet) {
+    font-size: $htmlFontSizeTablet;
+  }
+  @media (max-width: $mobile) {
+    font-size: $htmlFontSizeMobile;
+  }
 }
 body {
   color: $mainColor;
+  background-color: $mainBackGround;
   line-height: 1;
   font-family: $fontFamily;
   font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
   //text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -14,15 +12,24 @@
     min-width: 0;
   }
 }
+.swiper-slide-active {
+  z-index: 3;
+}
 
 [class*="__container"] {
-  width: 117rem;
+  width: 120rem;
   margin: 0px auto;
+  @media (max-width: $tablet) {
+    width: 68.8rem;
+  }
   @media (max-width: 48em) {
-    padding: 0 3rem;
+    padding: 0 1.5rem;
     width: 100%;
   }
 }
 ._lock {
   overflow: hidden;
+}
+.swiper-slide-active {
+  z-index: 5;
 }
