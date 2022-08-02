@@ -1,0 +1,81 @@
+.advantage {
+&__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+&__title {
+  width: 31.1rem;
+}
+&__card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+&-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: $backGround;
+  width: 25.3rem;
+  padding: 2rem 3.5rem;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+&__image {
+  margin-bottom: 1rem;
+  width: 7rem;
+}
+&__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+&__name {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+}
+}
+@media (max-width: $tablet){
+   .advantage{
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__title {
+      width: 44rem;
+      margin-bottom: 4.4rem;
+    }
+    &-card {
+      width: 22rem;
+      padding: 2rem ;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+    &__card {      
+      &-wrapper {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+   } 
+}
+@media (max-width: $mobile){
+   .advantage {
+    &__title {
+      width: 100%;
+    }
+    &__card {
+      width: 25.3rem;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+   } 
+}

@@ -29,6 +29,21 @@ section {
   background-color: $buttonBg;
   color: $secondTextColor;
 }
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8.6rem;
+  height: 8.6rem;
+  border: 0.1rem solid $buttonBg;
+  border-radius: 50%;
+  &::before {
+    font-size: 3.3rem;
+    color: $buttonBg;
+    transform: translateX(0.3rem);
+  }
+}
 .more {
   position: relative;
   display: flex;
@@ -50,6 +65,25 @@ section {
     background-color: $buttonBg;
   }
 }
+.play-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  &__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.8rem;
+    height: 3.8rem;
+    border: 0.13rem solid $buttonBg;
+    border-radius: 50%;
+    margin-left: 1rem;
+    &::before {
+      color: $buttonBg;
+      transform: translateX(0.2rem);
+    }
+  }
+  }
 @media (max-width: $tablet) {
   section {
     padding-top: 5rem;
@@ -66,5 +100,12 @@ section {
   }
   .info {
     font-size: 1.5rem;
+  }
+  .play {
+    width: 5.5rem;
+    height: 5.5rem;
+    &::before {
+      font-size: 2.5rem;
+    }
   }
 }

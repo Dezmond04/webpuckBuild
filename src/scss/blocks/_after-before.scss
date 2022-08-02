@@ -1,0 +1,128 @@
+.after-before {
+
+&__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+&__title {
+  width: 36.2rem;
+}
+&__info {
+  width: 38.6rem;
+}
+&__project-wrapper {
+  width: 31.8rem;
+}
+&__project {
+  margin-bottom: 2rem;
+}
+&__btn {
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+&__wrapper {
+  position: relative;
+  width: 74.5rem;
+  height: 72rem;
+  margin: 0 auto;
+}
+&__after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+&__after-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+
+}
+&__before {
+  width: 100%;
+  height: 100%;
+}
+&__before-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+&__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: $buttonBg;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1rem;
+    width: 7rem;
+    transform: translate(-50%, -50%);
+    background: $buttonBg;
+    cursor: pointer;
+  }
+}
+}
+@media (max-width: $tablet){
+   .after-before {
+    &__top-wrapper {
+      flex-direction: column;
+    } 
+    &__title {
+      width: 48rem;
+      margin-bottom: 4rem;
+    }
+    &__info {
+      width: 51rem;
+      margin-bottom: 2rem;
+    }
+    &__btn {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+     }
+     &__wrapper {
+      width: 100%;
+      height: 65rem;
+     }
+   }
+   
+}
+@media (max-width: $mobile){
+   .after-before {
+    &__container {
+      padding: 0;
+    }
+    &__top-wrapper {
+      align-items: center;
+      padding: 0 1.5rem;
+      margin-bottom: 3rem;
+    }
+    &__title {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &__info {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &__buttons {
+      text-align: center;
+    }
+    &__wrapper {
+      height: 45rem;
+    }
+   } 
+}

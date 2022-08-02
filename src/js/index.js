@@ -26,6 +26,10 @@ import "../scss/style.scss";
 // import galeryInit from "./libs/lightgalery.js";
 // galeryInit();
 
+// Импорт after-before слайдера (swiper)
+import afterBeforeVertical from "./module/afterBeforeVertical.js";
+afterBeforeVertical();
+
 //Подключение спойлеров
 // import spolers from "./module/spolers";
 // spolers();

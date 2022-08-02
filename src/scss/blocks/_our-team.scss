@@ -1,0 +1,85 @@
+.our-team {
+  &__top-wrapper {
+    display: flex;
+    margin-bottom: 7rem;
+  }
+  &__title {
+    width: 36.7rem;
+    margin-right: 4.1rem;
+  }
+  &__info {
+    width: 38.5rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-mini {
+    width: 37.7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    &__card {
+      width: 16rem;
+      cursor: pointer;
+    }
+    &__image {
+      width: 100%;
+      height: 18.2rem;
+      margin-bottom: 1rem;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__name {
+      margin-bottom: 0.5rem;
+    }
+    &__position {
+      font-size: 1.4rem;
+    }
+  }
+  &-slider {
+    width: 79.3rem;
+    &__slide {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__image {
+      width: 38.6rem;
+      height: 45rem;
+      flex-shrink: 0;
+      margin-right: 4rem;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__content {
+      width: 34rem;
+      height: 43.9rem;
+
+      padding-top: 6.5rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__info {
+      align-self: flex-start;
+      padding: 4.5rem 3rem;
+      background: $backGround;
+    }
+    &__about {
+      align-self: flex-end;
+    }
+    &__name {
+      font-weight: 700;
+    }
+    &__position {
+      font-size: 1.4rem;
+    }
+  }
+}
