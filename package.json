@@ -42,6 +42,7 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
+    "image-minimizer-webpack-plugin": "^3.6.1",
     "lightgallery": "^2.5.0",
     "swiper": "^8.2.6",
     "vue": "^3.2.37",
